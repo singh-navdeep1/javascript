@@ -10,6 +10,7 @@
     <ul>
 		<li><a id="loader" target="_blank">Loader</a></li>
 		<li><a id="login" target="_blank">Login</a></li>
+		<li><a id="jsassign" target="_blank">assign</a></li>
 	</ul>
 
     <script>
@@ -22,6 +23,7 @@
       // Now you can use baseURL to construct your links
       var loaderPageURL = baseURL + "loader/index.html";
       var loaderPageURL = baseURL + "login/index.html";
+      var loaderPageURL = baseURL + "jsassign/index.js";
 
       // Get all <li> elements
       var listItems = document.querySelectorAll("ul li");
@@ -42,7 +44,14 @@
             document
               .querySelector("#login")
               .setAttribute("href", loaderPageURL);
+			  break;
+		 case "assign":
+            document
+              .querySelector("#jsassign")
+              .setAttribute("href", loaderPageURL);
+        
         }
+		
       });
     </script>
   </body>
